@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "kartify";
+$servername = $_ENV['DB_SERVERNAME'];
+$username = $_ENV['DB_USERNAME'];
+$password = $_ENV['DB_PASSWORD'];
+$db = $_ENV['DB_DATABASE'];
 // Create connection
 $con = mysqli_connect($servername, $username, $password,$db);
 // Check connection
