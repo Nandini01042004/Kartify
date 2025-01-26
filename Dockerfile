@@ -4,8 +4,7 @@ FROM php:8.2-apache
 # Install necessary PHP extensions for MySQL and other required features
 RUN apt-get update && apt-get install -y \
     libzip-dev \
-    git \
-    unzip \
+    libonig-dev \
     && docker-php-ext-install mysqli pdo_mysql zip mbstring \
     && a2enmod rewrite
 
