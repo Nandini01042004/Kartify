@@ -7,9 +7,6 @@ WORKDIR /var/www/html
 # Copy the project files to the container
 COPY . .
 
-# Install Composer globally and install production dependencies
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-RUN composer install --no-dev --optimize-autoloader
 
 # Set proper permissions for the copied files
 RUN chown -R www-data:www-data /var/www/html && \
