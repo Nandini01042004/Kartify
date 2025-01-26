@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "online_shopping";
+$db = "kartify";
 // Create connection
 $con = mysqli_connect($servername, $username, $password,$db);
 // Check connection

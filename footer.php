@@ -12,8 +12,8 @@
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>address</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>9988776655</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>21pt04@psgtec.ac.in</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>21pt05@psgtec.ac.in</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>22pt20@psgtec.ac.in</a></li>
+									
 								</ul>
 							</div>
 						</div>
