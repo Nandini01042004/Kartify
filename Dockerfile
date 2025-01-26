@@ -1,8 +1,11 @@
 # Use the official PHP image with Apache
 FROM php:8.2-apache
 
-# Install necessary PHP extensions for MySQL
+# Install necessary PHP extensions for MySQL and other required features
 RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    git \
+    unzip \
     && docker-php-ext-install mysqli pdo_mysql zip mbstring \
     && a2enmod rewrite
 
@@ -20,6 +23,6 @@ EXPOSE 80
 
 # Start Apache server in the foreground
 CMD ["apache2-foreground"]
-	
+
 
 
