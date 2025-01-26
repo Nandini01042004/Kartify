@@ -4,14 +4,6 @@ FROM php:8.2-apache
 # Set working directory inside the container
 WORKDIR /var/www/html
 
-# Install only necessary PHP extensions and system libraries
-RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    git \
-    unzip \
-    && docker-php-ext-install zip pdo pdo_mysql mbstring curl \
-    && a2enmod rewrite
-
 # Copy the project files to the container
 COPY . .
 
