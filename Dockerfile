@@ -1,11 +1,8 @@
 # Use the official PHP image with Apache
 FROM php:8.2-apache
 
-# Install necessary PHP extensions for MySQL and other required features
+# Install necessary PHP extensions for MySQL
 RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    git \
-    unzip \
     && docker-php-ext-install mysqli pdo_mysql zip mbstring \
     && a2enmod rewrite
 
