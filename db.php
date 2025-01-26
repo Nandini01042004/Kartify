@@ -1,5 +1,5 @@
 <?php
-$servername = $_ENV['DB_SERVERNAME'];
+$servername = $_ENV['DB_SERVER'];
 $username = $_ENV['DB_USERNAME'];
 $password = $_ENV['DB_PASSWORD'];
 $db = $_ENV['DB_DATABASE'];
